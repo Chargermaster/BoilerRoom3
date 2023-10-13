@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background: lightgray;
+}
+
+.churchContainer{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+    gap: 1rem;
+    background: #eeeeee;
+    border-radius: 15px;
+}
+.services{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+    gap: 1rem;
+}
+
+.services h2{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.services img{
+    width: 100%;
+}
+
+.serviceBox{
+    background: #eeeeee;
+    border-radius: 15px;
+}
+
+.churchContainer img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.churchInfo h2{
+    margin-left: 1rem;
+}
+
+article{
+    margin: 1rem;
+}
+
+@media (min-width: 768px) {
+    .churchContainer{
+        flex-direction: row;
+        padding-top: 1rem;
+        padding: 0 1rem;
+    }
+    .churchInfo{
+        width: 50%;
+    }
+
+    .churchContainer img{
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    .services{
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    .serviceBox{
+        flex-direction: row;
+        width: 100%;
+        align-self: stretch;
+    }
+
+    .churchInfo h2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3rem;
+    }
+
+    .churchImgContainer{
+        width: 50%;
+    }
+}
